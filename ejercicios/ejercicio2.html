@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            padding: 50px;
+        }
+        .div1{
+            background-color: pink;
+            float: right;
+        }
+        .div2{
+            background-color: cyan;
+            float: left;
+        }
+        .div3{
+            background-color: orange;
+            float: left;
+        }
+        .clearfix::after {
+            content: "";        /* Asegura que el pseudo-elemento se renderice */
+            clear: both;        /* Limpia flotados a izquierda y derecha */
+            display: table;     /* Crea un nuevo contexto de formato de bloque */
+        }
+    </style>
+</head>
+<body>
+    <div class="clearfix">
+        <div class="div1">Div1</div>
+        <div class="div2">Div2</div>
+        <div class="div3">Div3</div>
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat consequatur eius ut possimus temporibus! Nam, labore quaerat dicta necessitatibus quod, ipsam atque odit facere tempore asperiores, fugiat eligendi explicabo ullam.</p>
+    <p>Esse, laboriosam reiciendis non omnis tempore aliquam. Eligendi maiores, odio omnis asperiores, autem, itaque sint cum earum a in fugiat nobis totam! Molestias modi iusto ipsam, enim accusamus deserunt cumque?</p>
+</body>
+</html>

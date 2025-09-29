@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .header{
+            padding: 3%;
+            background-color: grey;
+        }
+
+        ul{
+            list-style: none;
+        }
+
+        li{
+            padding: 2%;
+            background-color: cyan;
+            margin-bottom: 5px;
+        }
+        
+        .data{
+            display: inline-block;
+        }
+
+        .menu{
+            float: left;
+            width: 25%;
+        }
+
+        .content{
+            float: right;
+            width: 70%;
+            margin-left: 5px;
+        }
+        
+        .footer{
+            padding: 1%;
+            background-color: grey;
+        }
+        .clearfix::after {
+            content: "";        /* Asegura que el pseudo-elemento se renderice */
+            clear: both;        /* Limpia flotados a izquierda y derecha */
+            display: table;     /* Crea un nuevo contexto de formato de bloque */
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+      <h1>Cabecera</h1>
+    </div>
+    <div class="data clearfix">
+
+        <div class="column menu">
+          <ul>
+            <li>Lorem</li>
+            <li>Ipsum</li>
+            <li>Dolor</li>
+            <li>Sit</li>
+          </ul>
+        </div>
+      
+        <div class="column content">
+          <h1>Lorem ipsum</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae illum cum quidem! Velit minima libero quasi aspernatur commodi explicabo adipisci, quis facilis, veniam, quae aperiam unde numquam magnam minus nesciunt.</p>
+          <p>Veritatis numquam fugiat rem odit perferendis maiores delectus et reiciendis, saepe optio ipsum facere ipsam accusantium maxime ab deleniti neque quod? Vitae, nulla illo deleniti commodi quaerat ab tempora dicta!</p>
+        </div>
+    </div>
+  
+    <div class="footer">
+      <p>Pie de página</p>
+    </div>
+  </body>
+</html>
