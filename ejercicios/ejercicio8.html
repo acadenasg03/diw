@@ -6,16 +6,21 @@
     <title>Document</title>
     <style>
         *{
+            box-sizing: border-box;
             font-weight: bold;
         }
-        div{
-            display: inline-block;
+        .img-container{
+            float: left;
             width: 33%;
         }
-        img{
-            display: block;
+
+        .img-container img {
             width: 100%;
+            height: auto;
+            display: block;
+            aspect-ratio: 2 / 1;
         }
+        
         span{
             text-align: center;
         }
@@ -23,30 +28,35 @@
             padding: 1%;
             background-color: grey;
         }
+        .curso{
+            float: left;
+        }
         .nombre{
-            position: absolute;
-            right: 10px;
+            float: right;
+        }
+
+        .clearfix::after {
+            content: "";        /* Asegura que el pseudo-elemento se renderice */
+            clear: both;        /* Limpia flotados a izquierda y derecha */
+            display: table;     /* Crea un nuevo contexto de formato de bloque */
         }
     </style>
 </head>
 <body>
-    <div>
-
+    <div class="img-container">
         <img src="https://picsum.photos/id/598/600/400" alt="">
         <span>Lorem ipsum dolor sit amet</span>
     </div>
-    <div>
-
+    <div class="img-container">
         <img src="https://picsum.photos/id/642/600/400" alt="">
         <span>Lorem ipsum dolor sit amet</span>
     </div>
-    <div>
-
+    <div class="img-container">
         <img src="https://picsum.photos/id/211/600/400" alt="">
         <span>Lorem ipsum dolor sit amet</span>
 
     </div>
-    <footer>
+    <footer class="clearfix">
         <span class="curso">2ºDAW Diseño de Interfaces Web</span>
         <span class="nombre">Isaac Expósito</span>
     </footer>
