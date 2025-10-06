@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .clearfix::after {
+          content: "";        /* Asegura que el pseudo-elemento se renderice */
+          clear: both;        /* Limpia flotados a izquierda y derecha */
+          display: table;     /* Crea un nuevo contexto de formato de bloque */
+      }
+      .d1{
+        float: left;
+        background-color: gray;
+        width: 25%;
+      }
+      .d2{
+        float: left;
+        background-color: blue;
+        width: 25%;
+      }
+      .d3{
+        float: left;
+        background-color: gray;
+        width: 25%;
+      }
+      .d4{
+        float: left;
+        background-color: blue;
+        width: 25%;
+      }
+      @media (width < 992px){
+        .d1,.d2,.d3,.d4{
+            width: 50%;
+        }
+      }
+      @media (width < 600px){
+        .d1,.d2,.d3,.d4{
+            width: 100%;
+        }
+      }
+    </style>
+</head>
+<body>
+    <div class="container clearfix">
+
+        <div class="d1">
+            <h1>Columna1</h1>
+        </div>
+        <div class="d2">
+            <h1>Columna2</h1>
+        </div>
+        <div class="d3">
+            <h1>Columna3</h1>
+        </div>
+        <div class="d4">
+            <h1>Columna4</h1>
+        </div>
+    </div>
+</body>
+</html>
