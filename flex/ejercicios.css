@@ -1,0 +1,187 @@
+/*Ejercicio1*/
+main{
+    height: 200px;
+    background-color: #c3c3c3;
+    display: flex;
+    justify-content: end;
+    flex-direction: row-reverse;
+}
+/* Ejercicio2 */
+main{
+    height: 200px;
+    background-color: #c3c3c3;
+    display: flex;
+    flex-direction: column;
+}
+/* Ejercicio3 */
+main{
+    height: 200px;
+    background-color: #c3c3c3;
+    display: flex;
+    flex-direction: column-reverse;
+}
+/* Ejercicio4 */
+main{
+    height: 200px;
+    background-color: #c3c3c3;
+    display: flex;
+    justify-content: end;
+}
+/* Ejercicio5 */
+main{
+    height: 200px;
+    background-color: #c3c3c3;
+    display: flex;
+    justify-content: center;
+}
+/* Ejercicio6 */
+main{
+    height: 200px;
+    background-color: #c3c3c3;
+    display: flex;
+    justify-content: space-between;
+}
+/* Ejercicio7 */
+main{
+    height: 200px;
+    background-color: #c3c3c3;
+    display: flex;
+    justify-content: space-around;
+}
+/* Ejercicio8 */
+main{
+    height: 200px;
+    background-color: #c3c3c3;
+    display: flex;
+    align-items: end;
+}
+/* Ejercicio9 */
+main{
+    height: 200px;
+    background-color: #c3c3c3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Ejercicio10 */
+main{
+    height: 200px;
+    background-color: #c3c3c3;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+/* Ejercicio11 */
+main{
+    height: 200px;
+    background-color: #c3c3c3;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+main .verde{
+    background-color: green;
+    align-self: end;
+}
+/* Ejercicio12 */
+main{
+    height: 200px;
+    background-color: #c3c3c3;
+    display: flex;
+    justify-content: space-around;
+    align-items: end;
+}
+main .verde{
+    background-color: green;
+    align-self: center;
+}
+
+/* Ejercicio13 */
+main {
+    height: 200px;
+    background-color: #c3c3c3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .rojo {
+  background-color: red;
+  align-self: flex-start;
+}
+
+main .verde {
+  background-color: green;
+  align-self: center;
+  
+}
+
+main .azul {
+  background-color: blue;
+  align-self: flex-end;
+}
+/* Ejercicio14 */
+main{
+    height: 200px;
+    background-color: #c3c3c3;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+main .verde{
+    background-color: green;
+    align-self: flex-start;
+}
+/* Ejercicio15 */
+main {
+    height: 200px;
+    background-color: #c3c3c3;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: end;
+    
+}
+
+main .rojo {
+  background-color: red;
+  flex-grow: 0;
+  align-self: center;
+}
+
+main .verde {
+  background-color: green;
+  flex-grow: 1;
+  
+}
+
+main .azul {
+  background-color: blue;
+  flex-grow: 2;
+}
+/* Ejercicio16 */
+main {
+    height: 200px;
+    background-color: #c3c3c3;
+    display: flex;
+    
+    align-items: end;
+    
+}
+
+main .rojo {
+  background-color: red;
+  flex-grow: 1;
+  align-self: flex-start;
+}
+
+main .verde {
+  background-color: green;
+  flex-grow: 3;
+  align-self: center;
+  
+}
+
+main .azul {
+  background-color: blue;
+  flex-grow: 2;
+}
