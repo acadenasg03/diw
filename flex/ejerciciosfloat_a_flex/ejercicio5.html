@@ -5,36 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .container{
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .caja{
+        body{
             display: flex;
         }
         div{
-            padding: 50px;
+            padding: 20px;
+            text-align: center;
+            font-weight: bold;
         }
         .div1{
             background-color: pink;
-            order: 1;
+            flex-basis: 25%;
         }
         .div2{
             background-color: cyan;
+            flex-basis: 25%
         }
         .div3{
             background-color: orange;
+            flex-basis: 25%
+        }
+        .div4{
+            background-color: purple;
+            flex-basis: 25%
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="div1">Div1</div>
-        <div class="caja">
-            <div class="div2">Div2</div>
-            <div class="div3">Div3</div>
-        </div>
-    </div>
-  </body>
+    <div class="div1">Div1</div>
+    <div class="div2">Div2</div>
+    <div class="div3">Div3</div>
+    <div class="div4">Div4</div>
+    
+</body>
 </html>

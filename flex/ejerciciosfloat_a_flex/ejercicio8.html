@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            font-weight: bold;
+        }
+        .contenido{
+            display: flex;
+        }
+        .img-container{
+            text-align: center;
+            width: 33%;
+        }
+
+        .img-container img {
+            width: 100%;
+            height: auto;
+            display: block;
+            aspect-ratio: 2 / 1;
+        }
+        
+        footer{
+            padding: 1%;
+            background-color: grey;
+            display: flex;
+            justify-content: space-between;
+        }
+        .curso{
+            float: left;
+        }
+        .nombre{
+            float: right;
+        }
+    </style>
+</head>
+<body>
+    <div class="contenido">
+        <div class="img-container">
+            <img src="https://picsum.photos/id/598/600/400" alt="">
+            <span>Lorem ipsum dolor sit amet</span>
+        </div>
+        <div class="img-container">
+            <img src="https://picsum.photos/id/642/600/400" alt="">
+            <span>Lorem ipsum dolor sit amet</span>
+        </div>
+        <div class="img-container">
+            <img src="https://picsum.photos/id/211/600/400" alt="">
+            <span>Lorem ipsum dolor sit amet</span>
+        </div>
+    </div>
+    <footer>
+        <span class="curso">2ºDAW Diseño de Interfaces Web</span>
+        <span class="nombre">Isaac Expósito</span>
+    </footer>
+</body>
+</html>
