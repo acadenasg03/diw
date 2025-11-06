@@ -66,12 +66,15 @@ div > img{
     height: auto;
 
 }
-.img-title{
+.img-container .img-title{
     position: relative;
     top: -20px;
     text-align: center;
     padding: 3px 6px;
     margin: 0 auto;
     background-color: white;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    width: 80%;
 }
+
+/* sglhmrtlmhsh */
