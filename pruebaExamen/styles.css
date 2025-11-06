@@ -1,0 +1,77 @@
+:root{
+    --header-b:black;
+    --header-w:white;
+
+}
+
+.f-left {
+    float: left;
+}
+
+.f-right {
+    float: right;
+}
+
+header{
+    background-color: var(--header-b);
+    position: sticky;
+    top: 0;
+    padding: 10px;
+    text-align: center;
+    z-index: 10;
+}
+a{
+    color: var(--header-w);
+    text-decoration: none;
+}
+
+.logo span{
+    vertical-align: middle;
+}
+
+.logo img{
+    height: 25px;
+    vertical-align: middle;
+}
+.botonLogin{
+    border: 1px solid var(--header-w);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.botonLogin:hover{
+    color: var(--header-b);
+    border: 1px solid var(--header-b);
+    background-color: var(--header-w);
+}
+
+
+/* MAIN */
+main{
+    background-color: #eee;
+}
+
+h2{
+    background-color: white;
+    padding: 5px;
+    text-align: center;
+}
+
+div > img{
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+    height: auto;
+
+}
+.img-title{
+    position: relative;
+    top: -20px;
+    text-align: center;
+    padding: 3px 6px;
+    margin: 0 auto;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);;
+}
