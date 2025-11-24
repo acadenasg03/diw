@@ -201,22 +201,19 @@
 /*********************************/
 .ej8 {
   display: flex;
-  justify-content: space-between;
-  gap: 5px;
+  flex-wrap: wrap;
+  column-gap: 10px;
 }
 
 .ej8 :nth-child(1) {
-  flex-basis: 0;
   flex-grow: 1;
 }
 
 .ej8 :nth-child(2) {
-  flex-basis: 0;
   flex-grow: 1;
 }
 
 .ej8 :nth-child(3) {
-  flex-basis: 0;
   flex-grow: 1;
 }
 
