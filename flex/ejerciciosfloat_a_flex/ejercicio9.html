@@ -7,26 +7,36 @@
     <style>
         .menu{
             background-color: #000000;
-            padding: 15px;
-        }
-        .menu ul {
-            list-style-type: none;
+            
             display: flex;
             flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .links{
+            display: flex;
         }
         a{
             color: white;
             font-style: normal;
+            padding: 15px;
+            text-decoration: none;
+        }
+        a:hover{
+            background-color: red;
         }
     </style>
 </head>
 <body>
-    <nav class="menu">
-        <ul>
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Sobre nosotros</a></li>
-            <li><a href="#">Contacto</a></li>
-        </ul>
-    </nav>
+    <div class="menu">
+        <div class="links">
+            <a href="#">Inicio</a>
+            <a href="#">Nosotros</a>
+            <a href="#">Productos</a>
+            <a href="#">Contacto</a>
+        </div>
+        <a href="#">Salir</a>
+        
+    </div>
 </body>
 </html>

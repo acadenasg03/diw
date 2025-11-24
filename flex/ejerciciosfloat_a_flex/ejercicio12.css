@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+}
+div {
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 20px;
+}
+
+.header {
+  background: #ff9c56;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.contenido {
+  display: flex;
+  padding: 0px;
+  height: 400px;
+}
+.sidebar {
+  background: #ffbe56;
+  flex-basis: 0%;
+  flex-grow: 1;
+}
+
+.main-content {
+  background: #49708a;
+  color: white;
+  flex-basis: 0%;
+  flex-grow: 1;
+}
+
+.sub-content {
+  background: #355163;
+  flex-basis: 0%;
+  flex-grow: 1;
+}
+
+.footer {
+  background: #aad637;
+}
