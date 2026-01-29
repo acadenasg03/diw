@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>GRID. Propiedades de alineación (I)</title>
+  <meta charset="UTF-8">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    h2 {
+      text-align: center;
+      font-family: 'Consolas', 'Lucida Console', 'Courier New', Courier, monospace;
+      padding: 10px;
+      margin: 0px 0px 10px 0px;
+    }
+
+   
+
+    /* Contenedor grid del ejemplo */
+    #contenedor-grid {
+      background-color: #ccc;
+      width: 770px;
+      margin: 20px 0px 20px 20px;
+      height: 300px;
+      display: grid;
+      grid-template-columns: repeat(2, 250px);
+      grid-template-rows: repeat(3, 75px);
+      justify-content: end;
+      justify-items: end;
+      align-items: start;
+        
+    }
+
+    #contenedor-grid .item {
+      padding: 10px;
+      color: white;
+      font-weight: bold;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    #contenedor-grid .item:nth-child(1) {
+      background-color: darkred;
+    }
+
+    #contenedor-grid .item:nth-child(2) {
+      background-color: darkgreen;
+    }
+
+    #contenedor-grid .item:nth-child(3) {
+      background-color: darkblue;
+    }
+
+    #contenedor-grid .item:nth-child(4) {
+      background-color: darkgoldenrod;
+      justify-self: start;
+      align-self: end;
+    }
+
+    #contenedor-grid .item:nth-child(5) {
+      background-color: darkmagenta;
+    }
+
+    #contenedor-grid .item:nth-child(6) {
+      background-color: darkslategray;
+    }
+
+    /* Explicación en lista de propiedades */
+    .ul-propiedades>li {
+      padding: 5px;
+      margin: 0;
+    }
+
+    .ul-propiedades>li.highlight {
+      background-color: rgb(172, 255, 172);
+    }
+
+    code {
+      background-color: lightgrey;
+      padding: 2px 5px;
+      font-family: 'Consolas', 'Lucida Console', 'Courier New', Courier, monospace;
+      font-size: medium;
+    }
+
+    p,
+    li {
+      line-height: 1.5;
+    }
+  </style>
+</head>
+
+<body>
+  
+
+  <div id="contenedor-grid">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+    <div class="item">4</div>
+    <div class="item">5</div>
+    <div class="item">6</div>
+  </div>
+
+  
+
+  <script>
+    $(document).ready(function () {
+
+      $("#options > .valor").click(function () {
+
+        var propiedad = $(this).data("prop");;
+        var valor = $(this).html();
+        $("#contenedor-grid").css(propiedad, valor);
+
+        // Quitamos la clase active a todos los items de la propiedad seleccionada
+        // y se lo ponemos al que se ha hecho clic
+        $('*[data-prop="' + propiedad + '"]').removeClass("active");
+        $(this).addClass("active");
+
+        // Eliminamos la clase highlight a todos los li y se la ponemos al que corresponda
+        $(".ul-propiedades>li").removeClass("highlight");
+        $('*[data-prop="' + propiedad + '"]').addClass("highlight");
+
+      });
+
+    });
+  </script>
+</body>
+
+</html>

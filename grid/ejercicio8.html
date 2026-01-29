@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+      <style>
+            .contenedor{
+                  display: grid;
+            }
+            .contenedor > * {
+                  background-color: green;
+                  border: 1px solid blue;
+            }
+            .ej8  {
+                  grid-template-rows: 2fr;
+                  grid-template-columns: repeat(2, minmax(200px, 500px)); 
+            }
+      </style>
+</head>
+<body>
+      <div class="contenedor ej8">
+            <div>1</div>
+            <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam numquam, repellendus provident eveniet accusamus laboriosam magni porro tenetur. Excepturi voluptatem facere dolorum eaque sed sapiente ab magni commodi eveniet corporis.</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>4</div>
+            <div>5</div>
+            <div>5</div>
+            <div>4</div>
+            <div>5</div>
+      </div>
+</body>
+</html>
