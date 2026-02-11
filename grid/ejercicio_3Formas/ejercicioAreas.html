@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid. Líneas con nombre. Ejercicio</title>
+  <style>
+    body {
+      background-color: #f4f4f9;
+    }
+
+      .grid-container {
+            display: grid;
+            gap: 10px;
+            max-width: 800px;
+            height: 400px;
+            background-color: #ffffff;
+            border: 2px solid #ddd;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 10px;
+            grid-template-areas: 
+                  "uno    tres   .      ."
+                  "uno    tres   .      ."
+                  "uno    tres   .      ."
+                  ".      dos    dos    dos"
+                  ".      dos    dos    dos"
+                  ".      dos    dos    dos"
+                  "cuatro cuatro cuatro cuatro"
+                  "cuatro cuatro cuatro cuatro"
+                  "cuatro cuatro cuatro cuatro"
+                  "cuatro cuatro cuatro cuatro"
+                  "cinco  cinco  cinco  cinco"
+                  "seis   seis   seis   seis";
+      }
+
+      .grid-item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #007BFF;
+            color: white;
+            font-size: 1.2rem;
+            font-weight: bold;
+            border: 1px solid #0056b3;
+            border-radius: 5px;
+      }
+
+      .hijo1{
+            grid-area: uno;
+      }
+      .hijo2{
+            grid-area: dos;
+      }
+      .hijo3{
+            grid-area: tres;
+      }
+      .hijo4{
+            grid-area: cuatro;
+      }
+      .hijo5{
+            grid-area: cinco;
+      }
+      .hijo6{
+            grid-area: seis;
+      }
+
+    @media (width >= 600px){
+      .grid-container{
+            grid-template-areas: 
+                  "uno  uno"
+                  "uno  uno"
+                  "dos  tres"
+                  "dos  tres"
+                  "dos  cinco"
+                  ".    cuatro"
+                  ".    cuatro"
+                  "seis seis"
+                  "seis seis"
+                  "seis seis"
+                  "seis seis";
+      }
+      
+    }
+  </style>
+</head>
+
+<body>
+  <div class="grid-container">
+    <div class="grid-item hijo1">1</div>
+    <div class="grid-item hijo2">2</div>
+    <div class="grid-item hijo3">3</div>
+    <div class="grid-item hijo4">4</div>
+    <div class="grid-item hijo5">5</div>
+    <div class="grid-item hijo6">6</div>
+  </div>
+</body>
+
+</html>

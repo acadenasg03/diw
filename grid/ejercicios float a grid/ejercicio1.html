@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: grid;
+            
+            
+            /* 3º Forma */
+            /* grid-template-columns: auto 1fr auto; */
+            
+            /* 2º Forma */
+            /* grid-template-rows: 1fr; */
+            /* grid-template-columns: auto 1fr auto; */
+            /* grid-template-areas:  */
+                /* "uno dos tres"; */
+
+            /* 1º Forma */
+            /* grid-template-rows: 1fr; */
+            /* grid-template-columns: auto auto; */
+        }
+        .div1{
+            background-color: pink;
+            padding: 50px;
+            
+            
+            /* 3º Forma */
+            /* grid-row: 1 / 2; */
+            /* grid-column: 1 / 2; */
+
+
+            /* 2º Forma */
+            /* grid-area: tres; */
+
+
+            /* 1º Forma */
+            /* justify-self: right; */
+        }
+        .div2{
+            background-color: cyan;
+            padding: 50px;
+
+
+            /* 3º Forma */
+            /* grid-row: 1 / 2; */
+            /* grid-column: 3 / 4; */
+
+
+            /* 2º Forma */
+            /* grid-area: uno; */
+
+
+            /* 1º Forma */
+            /* justify-self: left; */
+            /* order: -1; */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="div1">Div1</div>
+        <div class="div2">Div2</div>
+    </div>
+</body>
+</html>
